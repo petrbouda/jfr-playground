@@ -28,7 +28,7 @@ public class Basic {
     }
 
     private static void monitoring() throws IOException, ParseException {
-        Configuration config = Configuration.getConfiguration("profile");
+        Configuration config = Configuration.getConfiguration("default");
         System.out.println(config.getDescription());
         System.out.println("settings:");
         config.getSettings().forEach((key, value) -> System.out.println(key + ": " + value));
