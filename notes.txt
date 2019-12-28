@@ -1,22 +1,19 @@
-
-
-jdk.ThreadStart#enabled: true
-jdk.ThreadEnd#enabled: true
-jdk.ThreadSleep#enabled: true
-jdk.ThreadSleep#stackTrace: true
-jdk.ThreadSleep#threshold: 10 ms
 jdk.ThreadPark#enabled: true
 jdk.ThreadPark#stackTrace: true
 jdk.ThreadPark#threshold: 10 ms
+
 jdk.JavaMonitorEnter#enabled: true
 jdk.JavaMonitorEnter#stackTrace: true
 jdk.JavaMonitorEnter#threshold: 10 ms
+
 jdk.JavaMonitorWait#enabled: true
 jdk.JavaMonitorWait#stackTrace: true
 jdk.JavaMonitorWait#threshold: 10 ms
+
 jdk.JavaMonitorInflate#enabled: true
 jdk.JavaMonitorInflate#stackTrace: true
 jdk.JavaMonitorInflate#threshold: 10 ms
+
 jdk.BiasedLockRevocation#enabled: true
 jdk.BiasedLockRevocation#stackTrace: true
 jdk.BiasedLockRevocation#threshold: 0 ms
