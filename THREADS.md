@@ -128,8 +128,8 @@ jdk.ThreadPark {
   stackTrace = [
     jdk.internal.misc.Unsafe.park(boolean, long)
     java.util.concurrent.locks.LockSupport.parkNanos(long) line: 376
-    pbouda.jfr.ThreadPark.lambda$main$0() line: 14
-    pbouda.jfr.ThreadPark$$Lambda$22.396180261.run()
+    pbouda.jfr.MonitorEnter.lambda$main$0() line: 14
+    pbouda.jfr.MonitorEnter$$Lambda$22.396180261.run()
     java.lang.Thread.run() line: 832
     ...
   ]
@@ -171,8 +171,8 @@ jdk.ThreadPark {
   stackTrace = [
     jdk.internal.misc.Unsafe.park(boolean, long)
     java.util.concurrent.locks.LockSupport.park() line: 341
-    pbouda.jfr.ThreadPark.lambda$main$0() line: 13
-    pbouda.jfr.ThreadPark$$Lambda$22.625576447.run()
+    pbouda.jfr.MonitorEnter.lambda$main$0() line: 13
+    pbouda.jfr.MonitorEnter$$Lambda$22.625576447.run()
     java.lang.Thread.run() line: 832
     ...
   ]
@@ -191,8 +191,8 @@ jdk.ThreadPark {
   stackTrace = [
     jdk.internal.misc.Unsafe.park(boolean, long)
     java.util.concurrent.locks.LockSupport.park(Object) line: 211
-    pbouda.jfr.ThreadPark.lambda$main$0(Object) line: 15
-    pbouda.jfr.ThreadPark$$Lambda$22.1128032093.run()
+    pbouda.jfr.MonitorEnter.lambda$main$0(Object) line: 15
+    pbouda.jfr.MonitorEnter$$Lambda$22.1128032093.run()
     java.lang.Thread.run() line: 832
     ...
   ]
@@ -226,8 +226,8 @@ jdk.ThreadPark {
   stackTrace = [
     jdk.internal.misc.Unsafe.park(boolean, long)
     java.util.concurrent.locks.LockSupport.parkUntil(Object, long) line: 293
-    pbouda.jfr.ThreadPark.lambda$main$0(Object) line: 16
-    pbouda.jfr.ThreadPark$$Lambda$22.443308702.run()
+    pbouda.jfr.MonitorEnter.lambda$main$0(Object) line: 16
+    pbouda.jfr.MonitorEnter$$Lambda$22.443308702.run()
     java.lang.Thread.run() line: 832
     ...
   ]

@@ -1,60 +1,53 @@
-jdk.ThreadPark#enabled: true
-jdk.ThreadPark#stackTrace: true
-jdk.ThreadPark#threshold: 10 ms
 
-jdk.JavaMonitorEnter#enabled: true
-jdk.JavaMonitorEnter#stackTrace: true
-jdk.JavaMonitorEnter#threshold: 10 ms
 
-jdk.JavaMonitorWait#enabled: true
-jdk.JavaMonitorWait#stackTrace: true
-jdk.JavaMonitorWait#threshold: 10 ms
-
-jdk.JavaMonitorInflate#enabled: true
-jdk.JavaMonitorInflate#stackTrace: true
-jdk.JavaMonitorInflate#threshold: 10 ms
-
-jdk.BiasedLockRevocation#enabled: true
-jdk.BiasedLockRevocation#stackTrace: true
-jdk.BiasedLockRevocation#threshold: 0 ms
-jdk.BiasedLockSelfRevocation#enabled: true
-jdk.BiasedLockSelfRevocation#stackTrace: true
-jdk.BiasedLockSelfRevocation#threshold: 0 ms
-jdk.BiasedLockClassRevocation#enabled: true
-jdk.BiasedLockClassRevocation#stackTrace: true
-jdk.BiasedLockClassRevocation#threshold: 0 ms
 jdk.ReservedStackActivation#enabled: true
 jdk.ReservedStackActivation#stackTrace: true
+
 jdk.ClassLoad#enabled: false
 jdk.ClassLoad#stackTrace: true
 jdk.ClassLoad#threshold: 0 ms
+
 jdk.ClassDefine#enabled: false
 jdk.ClassDefine#stackTrace: true
+
 jdk.ClassUnload#enabled: false
+
 jdk.JVMInformation#enabled: true
 jdk.JVMInformation#period: beginChunk
+
 jdk.InitialSystemProperty#enabled: true
 jdk.InitialSystemProperty#period: beginChunk
+
 jdk.ExecutionSample#enabled: true
 jdk.ExecutionSample#period: 10 ms
+
 jdk.NativeMethodSample#enabled: true
 jdk.NativeMethodSample#period: 20 ms
+
 jdk.SafepointBegin#enabled: true
 jdk.SafepointBegin#threshold: 0 ms
+
 jdk.SafepointStateSynchronization#enabled: false
 jdk.SafepointStateSynchronization#threshold: 0 ms
+
 jdk.SafepointCleanup#enabled: false
 jdk.SafepointCleanup#threshold: 0 ms
+
 jdk.SafepointCleanupTask#enabled: false
 jdk.SafepointCleanupTask#threshold: 0 ms
+
 jdk.SafepointEnd#enabled: false
 jdk.SafepointEnd#threshold: 0 ms
+
 jdk.ExecuteVMOperation#enabled: true
 jdk.ExecuteVMOperation#threshold: 0 ms
+
 jdk.Shutdown#enabled: true
 jdk.Shutdown#stackTrace: true
+
 jdk.ThreadDump#enabled: true
 jdk.ThreadDump#period: 60 s
+
 jdk.IntFlag#enabled: true
 jdk.IntFlag#period: beginChunk
 jdk.UnsignedIntFlag#enabled: true
@@ -76,8 +69,10 @@ jdk.UnsignedLongFlagChanged#enabled: true
 jdk.DoubleFlagChanged#enabled: true
 jdk.BooleanFlagChanged#enabled: true
 jdk.StringFlagChanged#enabled: true
+
 jdk.ObjectCount#enabled: false
 jdk.ObjectCount#period: everyChunk
+
 jdk.GCConfiguration#enabled: true
 jdk.GCConfiguration#period: everyChunk
 jdk.GCHeapConfiguration#enabled: true
