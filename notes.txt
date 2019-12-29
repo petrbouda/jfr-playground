@@ -1,5 +1,3 @@
-
-
 jdk.ReservedStackActivation#enabled: true
 jdk.ReservedStackActivation#stackTrace: true
 
@@ -12,14 +10,6 @@ jdk.ClassDefine#stackTrace: true
 
 jdk.ClassUnload#enabled: false
 
-jdk.JVMInformation#enabled: true
-jdk.JVMInformation#period: beginChunk
-
-jdk.InitialSystemProperty#enabled: true
-jdk.InitialSystemProperty#period: beginChunk
-
-jdk.ExecutionSample#enabled: true
-jdk.ExecutionSample#period: 10 ms
 
 jdk.NativeMethodSample#enabled: true
 jdk.NativeMethodSample#period: 20 ms
@@ -73,20 +63,12 @@ jdk.StringFlagChanged#enabled: true
 jdk.ObjectCount#enabled: false
 jdk.ObjectCount#period: everyChunk
 
-jdk.GCConfiguration#enabled: true
-jdk.GCConfiguration#period: everyChunk
-jdk.GCHeapConfiguration#enabled: true
-jdk.GCHeapConfiguration#period: beginChunk
-jdk.YoungGenerationConfiguration#enabled: true
-jdk.YoungGenerationConfiguration#period: beginChunk
-jdk.GCTLABConfiguration#enabled: true
-jdk.GCTLABConfiguration#period: beginChunk
-jdk.GCSurvivorConfiguration#enabled: true
-jdk.GCSurvivorConfiguration#period: beginChunk
+
 jdk.ObjectCountAfterGC#enabled: false
 jdk.GCHeapSummary#enabled: true
 jdk.PSHeapSummary#enabled: true
 jdk.G1HeapSummary#enabled: true
+
 jdk.MetaspaceSummary#enabled: true
 jdk.MetaspaceGCThreshold#enabled: true
 jdk.MetaspaceAllocationFailure#enabled: true
@@ -94,6 +76,7 @@ jdk.MetaspaceAllocationFailure#stackTrace: true
 jdk.MetaspaceOOM#enabled: true
 jdk.MetaspaceOOM#stackTrace: true
 jdk.MetaspaceChunkFreeListSummary#enabled: true
+
 jdk.GarbageCollection#enabled: true
 jdk.GarbageCollection#threshold: 0 ms
 jdk.ParallelOldGarbageCollection#enabled: true
@@ -133,12 +116,16 @@ jdk.ConcurrentModeFailure#enabled: true
 jdk.AllocationRequiringGC#enabled: false
 jdk.AllocationRequiringGC#stackTrace: true
 jdk.TenuringDistribution#enabled: true
+
 jdk.G1HeapRegionInformation#enabled: false
 jdk.G1HeapRegionInformation#period: everyChunk
 jdk.G1HeapRegionTypeChange#enabled: false
+
 jdk.ShenandoahHeapRegionInformation#enabled: false
 jdk.ShenandoahHeapRegionInformation#period: everyChunk
 jdk.ShenandoahHeapRegionStateChange#enabled: false
+
+
 jdk.OldObjectSample#enabled: true
 jdk.OldObjectSample#stackTrace: true
 jdk.OldObjectSample#cutoff: 0 ns
@@ -152,43 +139,37 @@ jdk.CompilerPhase#enabled: true
 jdk.CompilerPhase#threshold: 10 s
 jdk.CompilationFailure#enabled: true
 jdk.CompilerInlining#enabled: false
+
 jdk.CodeSweeperConfiguration#enabled: true
 jdk.CodeSweeperConfiguration#period: beginChunk
+
 jdk.CodeSweeperStatistics#enabled: true
 jdk.CodeSweeperStatistics#period: everyChunk
 jdk.SweepCodeCache#enabled: true
 jdk.SweepCodeCache#threshold: 100 ms
+
 jdk.CodeCacheConfiguration#enabled: true
 jdk.CodeCacheConfiguration#period: beginChunk
 jdk.CodeCacheStatistics#enabled: true
 jdk.CodeCacheStatistics#period: everyChunk
 jdk.CodeCacheFull#enabled: true
-jdk.OSInformation#enabled: true
-jdk.OSInformation#period: beginChunk
-jdk.VirtualizationInformation#enabled: true
-jdk.VirtualizationInformation#period: beginChunk
-jdk.CPUInformation#enabled: true
-jdk.CPUInformation#period: beginChunk
+
 jdk.ThreadContextSwitchRate#enabled: true
 jdk.ThreadContextSwitchRate#period: 10 s
-jdk.CPULoad#enabled: true
-jdk.CPULoad#period: 1000 ms
-jdk.ThreadCPULoad#enabled: true
-jdk.ThreadCPULoad#period: 10 s
-jdk.CPUTimeStampCounter#enabled: true
-jdk.CPUTimeStampCounter#period: beginChunk
+
 jdk.SystemProcess#enabled: true
 jdk.SystemProcess#period: endChunk
 jdk.NetworkUtilization#enabled: true
 jdk.NetworkUtilization#period: 5 s
-jdk.InitialEnvironmentVariable#enabled: true
-jdk.InitialEnvironmentVariable#period: beginChunk
+
 jdk.PhysicalMemory#enabled: true
 jdk.PhysicalMemory#period: everyChunk
+
 jdk.ObjectAllocationInNewTLAB#enabled: true
 jdk.ObjectAllocationInNewTLAB#stackTrace: true
 jdk.ObjectAllocationOutsideTLAB#enabled: true
 jdk.ObjectAllocationOutsideTLAB#stackTrace: true
+
 jdk.NativeLibrary#enabled: true
 jdk.NativeLibrary#period: everyChunk
 jdk.ModuleRequire#enabled: true
@@ -240,10 +221,12 @@ jdk.FlushTypeSet#enabled: true
 jdk.FlushTypeSet#threshold: 0 ns
 jdk.DataLoss#enabled: true
 jdk.DumpReason#enabled: true
+
 jdk.ZPageAllocation#enabled: true
 jdk.ZPageAllocation#threshold: 10 ms
 jdk.ZThreadPhase#enabled: true
 jdk.ZThreadPhase#threshold: 0 ms
+
 jdk.ZStatisticsCounter#enabled: false
 jdk.ZStatisticsCounter#threshold: 0 ms
 jdk.ZStatisticsSampler#enabled: false

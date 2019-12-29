@@ -14,6 +14,27 @@ jdk.JavaThreadStatistics {
 }
 ```
 
+## THREAD_CPU_LOAD
+
+```
+jdk.ThreadCPULoad {
+  startTime = 00:03:40.027
+  user = 8.64%
+  system = 0.15%
+  eventThread = "C2 CompilerThread1" (javaThreadId = 7)
+}
+
+
+jdk.ThreadCPULoad {
+  startTime = 00:03:48.574
+  user = 0.16%
+  system = 0.05%
+  eventThread = "main" (javaThreadId = 1)
+}
+
+...
+```
+
 ## THREAD_ALLOCATION_STATISTICS 
 
 - [custom-profile](custom-profile.xml)

@@ -135,7 +135,7 @@
 
     <event name="jdk.ExecutionSample">
         <setting name="enabled" control="method-sampling-enabled">true</setting>
-        <setting name="period" control="method-sampling-java-interval">10 ms</setting>
+        <setting name="period" control="method-sampling-java-interval">1 ms</setting>
     </event>
 
     <event name="jdk.NativeMethodSample">
@@ -180,7 +180,7 @@
 
     <event name="jdk.ThreadDump">
         <setting name="enabled" control="thread-dump-enabled">true</setting>
-        <setting name="period" control="thread-dump-interval">60 s</setting>
+        <setting name="period" control="thread-dump-interval">5 s</setting>
     </event>
 
     <event name="jdk.IntFlag">
