@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 public class ThreadAllocation {
 
     public static void main(String[] args) throws InterruptedException {
-        Jfr.start("jdk.ThreadContextSwitchRate");
+        Jfr.start("jdk.OldObjectSample");
 
         var scheduler = Executors.newSingleThreadScheduledExecutor(new NamedThreadFactory("allocator"));
         scheduler.scheduleWithFixedDelay(ThreadAllocation::allocate, 0, 10, TimeUnit.MILLISECONDS);

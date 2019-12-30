@@ -126,9 +126,12 @@ jdk.ShenandoahHeapRegionInformation#period: everyChunk
 jdk.ShenandoahHeapRegionStateChange#enabled: false
 
 
+
 jdk.OldObjectSample#enabled: true
 jdk.OldObjectSample#stackTrace: true
 jdk.OldObjectSample#cutoff: 0 ns
+
+
 jdk.CompilerConfiguration#enabled: true
 jdk.CompilerConfiguration#period: beginChunk
 jdk.CompilerStatistics#enabled: true
@@ -176,21 +179,26 @@ jdk.ModuleRequire#enabled: true
 jdk.ModuleRequire#period: endChunk
 jdk.ModuleExport#enabled: true
 jdk.ModuleExport#period: endChunk
+
 jdk.FileForce#enabled: true
 jdk.FileForce#stackTrace: true
 jdk.FileForce#threshold: 10 ms
+
 jdk.FileRead#enabled: true
 jdk.FileRead#stackTrace: true
 jdk.FileRead#threshold: 10 ms
+
 jdk.FileWrite#enabled: true
 jdk.FileWrite#stackTrace: true
 jdk.FileWrite#threshold: 10 ms
+
 jdk.SocketRead#enabled: true
 jdk.SocketRead#stackTrace: true
 jdk.SocketRead#threshold: 10 ms
 jdk.SocketWrite#enabled: true
 jdk.SocketWrite#stackTrace: true
 jdk.SocketWrite#threshold: 10 ms
+
 jdk.SecurityPropertyModification#enabled: false
 jdk.SecurityPropertyModification#stackTrace: true
 jdk.TLSHandshake#enabled: false
@@ -199,12 +207,15 @@ jdk.X509Validation#enabled: false
 jdk.X509Validation#stackTrace: true
 jdk.X509Certificate#enabled: false
 jdk.X509Certificate#stackTrace: true
+
 jdk.JavaExceptionThrow#enabled: false
 jdk.JavaExceptionThrow#stackTrace: true
 jdk.JavaErrorThrow#enabled: true
 jdk.JavaErrorThrow#stackTrace: true
+
 jdk.ExceptionStatistics#enabled: true
 jdk.ExceptionStatistics#period: 1000 ms
+
 jdk.ActiveRecording#enabled: true
 jdk.ActiveSetting#enabled: true
 jdk.Flush#enabled: true
