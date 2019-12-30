@@ -1,7 +1,7 @@
 # OLD_OBJECT_SAMPLE
 
 - `jdk.OldObjectSample`
-- execution: `#cutoff: 0 ns`
+- execution: `#cutoff: 0 ns` (how long to search for references)
 - JFR contains internal priority queue that keeps 256 objects (by default)
     - the priority becomes higher for neighbours when an object is garbage-collected 
     - weak-references - objects are collected and automatically deleted from the queue
