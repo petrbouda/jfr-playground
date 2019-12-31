@@ -14,20 +14,6 @@ jdk.ClassUnload#enabled: false
 jdk.NativeMethodSample#enabled: true
 jdk.NativeMethodSample#period: 20 ms
 
-jdk.SafepointBegin#enabled: true
-jdk.SafepointBegin#threshold: 0 ms
-
-jdk.SafepointStateSynchronization#enabled: false
-jdk.SafepointStateSynchronization#threshold: 0 ms
-
-jdk.SafepointCleanup#enabled: false
-jdk.SafepointCleanup#threshold: 0 ms
-
-jdk.SafepointCleanupTask#enabled: false
-jdk.SafepointCleanupTask#threshold: 0 ms
-
-jdk.SafepointEnd#enabled: false
-jdk.SafepointEnd#threshold: 0 ms
 
 jdk.ExecuteVMOperation#enabled: true
 jdk.ExecuteVMOperation#threshold: 0 ms
