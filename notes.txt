@@ -15,9 +15,6 @@ jdk.NativeMethodSample#enabled: true
 jdk.NativeMethodSample#period: 20 ms
 
 
-jdk.ExecuteVMOperation#enabled: true
-jdk.ExecuteVMOperation#threshold: 0 ms
-
 jdk.Shutdown#enabled: true
 jdk.Shutdown#stackTrace: true
 
