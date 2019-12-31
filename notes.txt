@@ -22,19 +22,12 @@ jdk.ThreadDump#period: 60 s
 jdk.ObjectCount#enabled: false
 jdk.ObjectCount#period: everyChunk
 
-
 jdk.ObjectCountAfterGC#enabled: false
+
 jdk.GCHeapSummary#enabled: true
 jdk.PSHeapSummary#enabled: true
 jdk.G1HeapSummary#enabled: true
 
-jdk.MetaspaceSummary#enabled: true
-jdk.MetaspaceGCThreshold#enabled: true
-jdk.MetaspaceAllocationFailure#enabled: true
-jdk.MetaspaceAllocationFailure#stackTrace: true
-jdk.MetaspaceOOM#enabled: true
-jdk.MetaspaceOOM#stackTrace: true
-jdk.MetaspaceChunkFreeListSummary#enabled: true
 
 jdk.GarbageCollection#enabled: true
 jdk.GarbageCollection#threshold: 0 ms
