@@ -1,6 +1,9 @@
 # FILE
 
+#### FILE_FORCE
+
 - NOT REPRODUCED
+- Description: `force updates to be written to file`
 
 ```
 jdk.FileForce#enabled: true
