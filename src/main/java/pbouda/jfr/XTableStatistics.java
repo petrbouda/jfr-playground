@@ -2,12 +2,10 @@ package pbouda.jfr;
 
 public class XTableStatistics {
 
-    public static void main(String[] args) {
-        Jfr.start("jdk.SymbolTableStatistics",
-                "jdk.StringTableStatistics",
-                "jdk.PlaceholderTableStatistics",
-                "jdk.LoaderConstraintsTableStatistics",
-                "jdk.ProtectionDomainCacheTableStatistics");
+    public static void main(String[] args) throws InterruptedException {
+        Jfr.start("jdk.ActiveRecording");
+
+        Thread.sleep(5000);
     }
 
 }

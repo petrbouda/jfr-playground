@@ -254,3 +254,14 @@ jdk.ThreadPark {
   ]
 }
 ```
+
+## THREAD_CONTEXT_SWITCH_RATE
+
+- `#period: 10 s`
+
+```
+jdk.ThreadContextSwitchRate {
+  startTime = 16:08:04.693
+  switchRate = 21159.135 Hz
+}
+```

@@ -1,18 +1,3 @@
-jdk.ReservedStackActivation#enabled: true
-jdk.ReservedStackActivation#stackTrace: true
-
-jdk.ClassLoad#enabled: false
-jdk.ClassLoad#stackTrace: true
-jdk.ClassLoad#threshold: 0 ms
-
-jdk.ClassDefine#enabled: false
-jdk.ClassDefine#stackTrace: true
-
-jdk.ClassUnload#enabled: false
-
-
-jdk.NativeMethodSample#enabled: true
-jdk.NativeMethodSample#period: 20 ms
 
 jdk.GarbageCollection#enabled: true
 jdk.GarbageCollection#threshold: 0 ms
@@ -62,21 +47,16 @@ jdk.ShenandoahHeapRegionInformation#enabled: false
 jdk.ShenandoahHeapRegionInformation#period: everyChunk
 jdk.ShenandoahHeapRegionStateChange#enabled: false
 
+jdk.ZPageAllocation#enabled: true
+jdk.ZPageAllocation#threshold: 10 ms
+jdk.ZThreadPhase#enabled: true
+jdk.ZThreadPhase#threshold: 0 ms
 
+jdk.ZStatisticsCounter#enabled: false
+jdk.ZStatisticsCounter#threshold: 0 ms
+jdk.ZStatisticsSampler#enabled: false
+jdk.ZStatisticsSampler#threshold: 0 ms
 
-jdk.ThreadContextSwitchRate#enabled: true
-jdk.ThreadContextSwitchRate#period: 10 s
-
-jdk.SystemProcess#enabled: true
-jdk.SystemProcess#period: endChunk
-jdk.NetworkUtilization#enabled: true
-jdk.NetworkUtilization#period: 5 s
-
-jdk.PhysicalMemory#enabled: true
-jdk.PhysicalMemory#period: everyChunk
-
-jdk.NativeLibrary#enabled: true
-jdk.NativeLibrary#period: everyChunk
 jdk.ModuleRequire#enabled: true
 jdk.ModuleRequire#period: endChunk
 jdk.ModuleExport#enabled: true
@@ -90,37 +70,3 @@ jdk.X509Validation#enabled: false
 jdk.X509Validation#stackTrace: true
 jdk.X509Certificate#enabled: false
 jdk.X509Certificate#stackTrace: true
-
-jdk.JavaExceptionThrow#enabled: false
-jdk.JavaExceptionThrow#stackTrace: true
-jdk.JavaErrorThrow#enabled: true
-jdk.JavaErrorThrow#stackTrace: true
-jdk.ExceptionStatistics#enabled: true
-jdk.ExceptionStatistics#period: 1000 ms
-
-jdk.ActiveRecording#enabled: true
-jdk.ActiveSetting#enabled: true
-jdk.Flush#enabled: true
-jdk.Flush#threshold: 0 ns
-jdk.FlushStorage#enabled: true
-jdk.FlushStorage#threshold: 0 ns
-jdk.FlushStacktrace#enabled: true
-jdk.FlushStacktrace#threshold: 0 ns
-jdk.FlushStringPool#enabled: true
-jdk.FlushStringPool#threshold: 0 ns
-jdk.FlushMetadata#enabled: true
-jdk.FlushMetadata#threshold: 0 ns
-jdk.FlushTypeSet#enabled: true
-jdk.FlushTypeSet#threshold: 0 ns
-jdk.DataLoss#enabled: true
-jdk.DumpReason#enabled: true
-
-jdk.ZPageAllocation#enabled: true
-jdk.ZPageAllocation#threshold: 10 ms
-jdk.ZThreadPhase#enabled: true
-jdk.ZThreadPhase#threshold: 0 ms
-
-jdk.ZStatisticsCounter#enabled: false
-jdk.ZStatisticsCounter#threshold: 0 ms
-jdk.ZStatisticsSampler#enabled: false
-jdk.ZStatisticsSampler#threshold: 0 ms

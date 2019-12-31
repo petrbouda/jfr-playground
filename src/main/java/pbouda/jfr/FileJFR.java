@@ -8,7 +8,7 @@ public class FileJFR {
 
     public static void main(String[] args) throws IOException, InterruptedException {
 //        Jfr.start("jdk.FileRead", "jdk.FileWrite", "jdk.FileForce");
-        Jfr.start("jdk.FileForce");
+        Jfr.start("jdk.NativeMethodSample");
         Path movie = Path.of("/home/pbouda/movie.avi");
 
         Thread.sleep(5_000);
