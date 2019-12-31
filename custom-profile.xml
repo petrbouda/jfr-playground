@@ -247,7 +247,7 @@
     </event>
 
     <event name="jdk.ObjectCount">
-        <setting name="enabled" control="memory-profiling-enabled-all">false</setting>
+        <setting name="enabled" control="memory-profiling-enabled-all">true</setting>
         <setting name="period">everyChunk</setting>
     </event>
 
@@ -277,7 +277,7 @@
     </event>
 
     <event name="jdk.ObjectCountAfterGC">
-        <setting name="enabled">false</setting>
+        <setting name="enabled">true</setting>
     </event>
 
     <event name="jdk.GCHeapSummary">

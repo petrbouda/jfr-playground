@@ -17,7 +17,7 @@ public class AllocationStress {
     private static final int PARALLEL_USERS = 4;
 
     public static void main(String[] args) {
-        Jfr.start("jdk.MetaspaceGCThreshold", "jdk.MetaspaceAllocationFailure", "jdk.MetaspaceOOM", "jdk.MetaspaceChunkFreeListSummary");
+        Jfr.start("jdk.ObjectAllocationInNewTLAB", "jdk.ObjectAllocationOutsideTLAB");
 
         AtomicInteger counter = new AtomicInteger();
 

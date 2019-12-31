@@ -14,21 +14,6 @@ jdk.ClassUnload#enabled: false
 jdk.NativeMethodSample#enabled: true
 jdk.NativeMethodSample#period: 20 ms
 
-
-jdk.ThreadDump#enabled: true
-jdk.ThreadDump#period: 60 s
-
-
-jdk.ObjectCount#enabled: false
-jdk.ObjectCount#period: everyChunk
-
-jdk.ObjectCountAfterGC#enabled: false
-
-jdk.GCHeapSummary#enabled: true
-jdk.PSHeapSummary#enabled: true
-jdk.G1HeapSummary#enabled: true
-
-
 jdk.GarbageCollection#enabled: true
 jdk.GarbageCollection#threshold: 0 ms
 jdk.ParallelOldGarbageCollection#enabled: true
