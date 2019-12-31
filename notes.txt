@@ -57,11 +57,6 @@ jdk.ZStatisticsCounter#threshold: 0 ms
 jdk.ZStatisticsSampler#enabled: false
 jdk.ZStatisticsSampler#threshold: 0 ms
 
-jdk.ModuleRequire#enabled: true
-jdk.ModuleRequire#period: endChunk
-jdk.ModuleExport#enabled: true
-jdk.ModuleExport#period: endChunk
-
 jdk.SecurityPropertyModification#enabled: false
 jdk.SecurityPropertyModification#stackTrace: true
 jdk.TLSHandshake#enabled: false
