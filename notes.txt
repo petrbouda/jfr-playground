@@ -56,12 +56,3 @@ jdk.ZStatisticsCounter#enabled: false
 jdk.ZStatisticsCounter#threshold: 0 ms
 jdk.ZStatisticsSampler#enabled: false
 jdk.ZStatisticsSampler#threshold: 0 ms
-
-jdk.SecurityPropertyModification#enabled: false
-jdk.SecurityPropertyModification#stackTrace: true
-jdk.TLSHandshake#enabled: false
-jdk.TLSHandshake#stackTrace: true
-jdk.X509Validation#enabled: false
-jdk.X509Validation#stackTrace: true
-jdk.X509Certificate#enabled: false
-jdk.X509Certificate#stackTrace: true

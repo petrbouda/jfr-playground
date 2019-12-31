@@ -1,4 +1,60 @@
-# CLASS
+# CLASSES
+
+## CLASSLOADER STATISTICS
+
+#### CLASS_LOADER_STATISTICS
+
+- [custom-profile](custom-profile.xml)
+- `jdk.ClassLoaderStatistics`
+- generated `everyChunk`
+- for every classloader
+
+```
+jdk.ClassLoaderStatistics {
+  startTime = 16:18:05.203
+  classLoader = N/A
+  parentClassLoader = N/A
+  classLoaderData = 0x7FA3F827B5E0
+  classCount = 1568
+  chunkSize = 4.4 MB
+  blockSize = 4.0 MB
+  unsafeAnonymousClassCount = 104
+  unsafeAnonymousChunkSize = 287.0 kB
+  unsafeAnonymousBlockSize = 185.2 kB
+}
+
+
+jdk.ClassLoaderStatistics {
+  startTime = 16:18:05.203
+  classLoader = jdk.internal.loader.ClassLoaders$AppClassLoader (id = 4)
+  parentClassLoader = N/A
+  classLoaderData = 0x7FA3F8306BC0
+  classCount = 6
+  chunkSize = 84.0 kB
+  blockSize = 23.1 kB
+  unsafeAnonymousClassCount = 4
+  unsafeAnonymousChunkSize = 12.0 kB
+  unsafeAnonymousBlockSize = 7.5 kB
+}
+
+...
+```
+
+#### CLASS_LOADING_STATISTICS
+
+- [custom-profile](custom-profile.xml)
+- `jdk.ClassLoadingStatistics`
+- generated every 1s
+
+```
+jdk.ClassLoadingStatistics {
+  startTime = 16:13:52.017
+  loadedClassCount = 1715
+  unloadedClassCount = 0
+}
+```
+
+## LOADING OF SINGLE CLASSES
 
 - `disabled` by default
 
