@@ -472,7 +472,7 @@
 
     <event name="jdk.CompilerPhase">
         <setting name="enabled" control="compiler-enabled">true</setting>
-        <setting name="threshold" control="compiler-phase-threshold">10 s</setting>
+        <setting name="threshold" control="compiler-phase-threshold">0 s</setting>
     </event>
 
     <event name="jdk.CompilationFailure">
@@ -480,7 +480,7 @@
     </event>
 
     <event name="jdk.CompilerInlining">
-        <setting name="enabled" control="compiler-enabled-failure">false</setting>
+        <setting name="enabled" control="compiler-enabled-failure">true</setting>
     </event>
 
     <event name="jdk.CodeSweeperConfiguration">

@@ -105,30 +105,6 @@ jdk.ShenandoahHeapRegionInformation#period: everyChunk
 jdk.ShenandoahHeapRegionStateChange#enabled: false
 
 
-jdk.CompilerConfiguration#enabled: true
-jdk.CompilerConfiguration#period: beginChunk
-jdk.CompilerStatistics#enabled: true
-jdk.CompilerStatistics#period: 1000 ms
-jdk.Compilation#enabled: true
-jdk.Compilation#threshold: 100 ms
-jdk.CompilerPhase#enabled: true
-jdk.CompilerPhase#threshold: 10 s
-jdk.CompilationFailure#enabled: true
-jdk.CompilerInlining#enabled: false
-
-jdk.CodeSweeperConfiguration#enabled: true
-jdk.CodeSweeperConfiguration#period: beginChunk
-
-jdk.CodeSweeperStatistics#enabled: true
-jdk.CodeSweeperStatistics#period: everyChunk
-jdk.SweepCodeCache#enabled: true
-jdk.SweepCodeCache#threshold: 100 ms
-
-jdk.CodeCacheConfiguration#enabled: true
-jdk.CodeCacheConfiguration#period: beginChunk
-jdk.CodeCacheStatistics#enabled: true
-jdk.CodeCacheStatistics#period: everyChunk
-jdk.CodeCacheFull#enabled: true
 
 jdk.ThreadContextSwitchRate#enabled: true
 jdk.ThreadContextSwitchRate#period: 10 s
@@ -164,12 +140,6 @@ jdk.FileWrite#enabled: true
 jdk.FileWrite#stackTrace: true
 jdk.FileWrite#threshold: 10 ms
 
-jdk.SocketRead#enabled: true
-jdk.SocketRead#stackTrace: true
-jdk.SocketRead#threshold: 10 ms
-jdk.SocketWrite#enabled: true
-jdk.SocketWrite#stackTrace: true
-jdk.SocketWrite#threshold: 10 ms
 
 jdk.SecurityPropertyModification#enabled: false
 jdk.SecurityPropertyModification#stackTrace: true

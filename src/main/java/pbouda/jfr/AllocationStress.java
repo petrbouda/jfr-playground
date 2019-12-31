@@ -17,7 +17,7 @@ public class AllocationStress {
     private static final int PARALLEL_USERS = 4;
 
     public static void main(String[] args) {
-        Jfr.start("jdk.OldObjectSample");
+        Jfr.start("jdk.CodeCacheConfiguration", "jdk.CodeCacheStatistics");
 
         AtomicInteger counter = new AtomicInteger();
 
