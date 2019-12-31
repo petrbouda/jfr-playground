@@ -75,29 +75,12 @@ jdk.NetworkUtilization#period: 5 s
 jdk.PhysicalMemory#enabled: true
 jdk.PhysicalMemory#period: everyChunk
 
-jdk.ObjectAllocationInNewTLAB#enabled: true
-jdk.ObjectAllocationInNewTLAB#stackTrace: true
-jdk.ObjectAllocationOutsideTLAB#enabled: true
-jdk.ObjectAllocationOutsideTLAB#stackTrace: true
-
 jdk.NativeLibrary#enabled: true
 jdk.NativeLibrary#period: everyChunk
 jdk.ModuleRequire#enabled: true
 jdk.ModuleRequire#period: endChunk
 jdk.ModuleExport#enabled: true
 jdk.ModuleExport#period: endChunk
-
-jdk.FileForce#enabled: true
-jdk.FileForce#stackTrace: true
-jdk.FileForce#threshold: 10 ms
-
-jdk.FileRead#enabled: true
-jdk.FileRead#stackTrace: true
-jdk.FileRead#threshold: 10 ms
-jdk.FileWrite#enabled: true
-jdk.FileWrite#stackTrace: true
-jdk.FileWrite#threshold: 10 ms
-
 
 jdk.SecurityPropertyModification#enabled: false
 jdk.SecurityPropertyModification#stackTrace: true
