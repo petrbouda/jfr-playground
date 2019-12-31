@@ -38,27 +38,6 @@ jdk.Shutdown#stackTrace: true
 jdk.ThreadDump#enabled: true
 jdk.ThreadDump#period: 60 s
 
-jdk.IntFlag#enabled: true
-jdk.IntFlag#period: beginChunk
-jdk.UnsignedIntFlag#enabled: true
-jdk.UnsignedIntFlag#period: beginChunk
-jdk.LongFlag#enabled: true
-jdk.LongFlag#period: beginChunk
-jdk.UnsignedLongFlag#enabled: true
-jdk.UnsignedLongFlag#period: beginChunk
-jdk.DoubleFlag#enabled: true
-jdk.DoubleFlag#period: beginChunk
-jdk.BooleanFlag#enabled: true
-jdk.BooleanFlag#period: beginChunk
-jdk.StringFlag#enabled: true
-jdk.StringFlag#period: beginChunk
-jdk.IntFlagChanged#enabled: true
-jdk.UnsignedIntFlagChanged#enabled: true
-jdk.LongFlagChanged#enabled: true
-jdk.UnsignedLongFlagChanged#enabled: true
-jdk.DoubleFlagChanged#enabled: true
-jdk.BooleanFlagChanged#enabled: true
-jdk.StringFlagChanged#enabled: true
 
 jdk.ObjectCount#enabled: false
 jdk.ObjectCount#period: everyChunk
@@ -126,12 +105,6 @@ jdk.ShenandoahHeapRegionInformation#period: everyChunk
 jdk.ShenandoahHeapRegionStateChange#enabled: false
 
 
-
-jdk.OldObjectSample#enabled: true
-jdk.OldObjectSample#stackTrace: true
-jdk.OldObjectSample#cutoff: 0 ns
-
-
 jdk.CompilerConfiguration#enabled: true
 jdk.CompilerConfiguration#period: beginChunk
 jdk.CompilerStatistics#enabled: true
@@ -187,7 +160,6 @@ jdk.FileForce#threshold: 10 ms
 jdk.FileRead#enabled: true
 jdk.FileRead#stackTrace: true
 jdk.FileRead#threshold: 10 ms
-
 jdk.FileWrite#enabled: true
 jdk.FileWrite#stackTrace: true
 jdk.FileWrite#threshold: 10 ms

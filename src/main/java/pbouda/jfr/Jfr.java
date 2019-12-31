@@ -13,7 +13,7 @@ import java.util.concurrent.Executors;
 public class Jfr {
 
     public static void main(String[] args) throws InterruptedException {
-        Jfr.start("jdk.JVMInformation");
+        Jfr.start("jdk.LongFlag");
         Thread.currentThread().join();
     }
 
