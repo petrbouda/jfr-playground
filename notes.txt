@@ -95,7 +95,6 @@ jdk.JavaExceptionThrow#enabled: false
 jdk.JavaExceptionThrow#stackTrace: true
 jdk.JavaErrorThrow#enabled: true
 jdk.JavaErrorThrow#stackTrace: true
-
 jdk.ExceptionStatistics#enabled: true
 jdk.ExceptionStatistics#period: 1000 ms
 

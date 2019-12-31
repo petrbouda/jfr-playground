@@ -643,7 +643,7 @@
     </event>
 
     <event name="jdk.JavaExceptionThrow">
-        <setting name="enabled" control="enable-exceptions">false</setting>
+        <setting name="enabled" control="enable-exceptions">true</setting>
         <setting name="stackTrace">true</setting>
     </event>
 
