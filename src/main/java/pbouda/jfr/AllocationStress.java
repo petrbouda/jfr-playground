@@ -17,7 +17,10 @@ public class AllocationStress {
     private static final int PARALLEL_USERS = 4;
 
     public static void main(String[] args) {
-        Jfr.start("jdk.ClassLoad", "jdk.ClassDefine", "jdk.ClassUnload");
+        Jfr.start(
+                "jdk.ZPageAllocation"
+//                "jdk.ZThreadPhase"
+        );
 
         AtomicInteger counter = new AtomicInteger();
 

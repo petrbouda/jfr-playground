@@ -131,3 +131,28 @@ jdk.CompilerPhase {
 
 ...
 ```
+
+#### DEOPTIMIZATION
+
+```
+jdk.Deoptimization {
+  startTime = 12:33:57.271
+  compileId = 1655
+  compiler = "c2"
+  method = jdk.jfr.internal.EventWriter.putStackTrace()
+  lineNumber = 170
+  bci = 7
+  instruction = "ifeq"
+  reason = "unstable_if"
+  action = "reinterpret"
+  eventThread = "JFR Periodic Tasks" (javaThreadId = 22)
+  stackTrace = [
+    jdk.jfr.internal.EventWriter.putStackTrace() line: 170
+    jdk.jfr.internal.handlers.EventHandler1872_1577964835419-26342.write(long, long, long)
+    jdk.jfr.events.ExceptionStatisticsEvent.commit()
+    jdk.jfr.internal.instrument.JDKEvents.emitExceptionStatistics() line: 136
+    jdk.jfr.internal.instrument.JDKEvents$$Lambda$37.1361501771.run()
+    ...
+  ]
+}
+```
