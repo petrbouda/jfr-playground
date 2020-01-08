@@ -1,19 +1,71 @@
 # CERTIFICATES
 
+- https://bugs.openjdk.java.net/browse/JDK-8220239
+- https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/security/cert/X509Certificate.html
+
+- `java --enable-preview --source 14 JfrCertificates.java https://github.com/petrbouda`
+
 ```java
-public class Certificates {
+import jdk.jfr.Configuration;
+import jdk.jfr.consumer.EventStream;
+import jdk.jfr.consumer.RecordingStream;
 
-    public static void main(String[] args) throws InterruptedException {
-        Jfr.start("jdk.TLSHandshake", "jdk.X509Validation", "jdk.X509Certificate");
+import java.io.IOException;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.text.ParseException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create("https://www.google.cz/"))
-                .build();
-        client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
-                .thenApply(HttpResponse::body)
-                .thenAccept(System.out::println)
-                .join();
+public class JfrCertificates {
+
+    private static final String CONFIGURATION = """
+            <configuration version="2.0">
+                <event name="jdk.TLSHandshake">
+                    <setting name="enabled">true</setting>
+                    <setting name="stackTrace">true</setting>
+                </event>
+                <event name="jdk.X509Validation">
+                    <setting name="enabled">true</setting>
+                    <setting name="stackTrace">true</setting>
+                </event>
+                <event name="jdk.X509Certificate">
+                    <setting name="enabled">true</setting>
+                    <setting name="stackTrace">true</setting>
+                </event>
+            </configuration>""";
+
+    public static void main(String[] args) throws IOException, ParseException, InterruptedException {
+        startJFR();
+
+        HttpRequest request = HttpRequest.newBuilder(URI.create(args[0])).build();
+        int statusCode = HttpClient.newHttpClient()
+                .send(request, HttpResponse.BodyHandlers.ofString())
+                .statusCode();
+
+        System.out.println("STATUS CODE: " + statusCode);
+    }
+
+    private static void startJFR() throws IOException, ParseException {
+        Path configuration = Files.createTempFile(null, ".xml");
+        Files.write(configuration, CONFIGURATION.getBytes());
+
+        Configuration config = Configuration.create(configuration);
+        config.getSettings().forEach((key, value) -> System.out.println(key + ": " + value));
+
+        ExecutorService executor = Executors.newSingleThreadExecutor();
+        executor.submit(() -> {
+            try (EventStream es = new RecordingStream(config)) {
+                es.onEvent("jdk.TLSHandshake", e -> System.out.println(e));
+                es.onEvent("jdk.X509Validation", e -> System.out.println(e));
+                es.onEvent("jdk.X509Certificate", e -> System.out.println(e));
+                es.start();
+            }
+        });
     }
 }
 ```
