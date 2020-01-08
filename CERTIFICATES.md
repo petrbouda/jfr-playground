@@ -150,3 +150,101 @@ jdk.TLSHandshake {
   ]
 }
 ```
+
+#### FULL STACKTRACES
+
+```
+X509Certificate
+---------------
+sun.security.provider.X509Factory.commitEvent(X509CertImpl) line: 794,     
+sun.security.provider.X509Factory.engineGenerateCertificate(InputStream) line: 108,     
+java.security.cert.CertificateFactory.generateCertificate(InputStream) line: 355,     
+sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(ClientHandshakeContext, List) line: 1291,     
+sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(ClientHandshakeContext, CertificateMessage$T13CertificateMessage) line: 1207,     
+sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(ConnectionContext, ByteBuffer) line: 1154,    
+sun.security.ssl.SSLHandshake.consume(ConnectionContext, ByteBuffer) line: 396,     
+sun.security.ssl.HandshakeContext.dispatch(byte, ByteBuffer) line: 444,     
+sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run() line: 1260,     
+sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run() line: 1247,     
+java.security.AccessController.executePrivileged(PrivilegedExceptionAction, AccessControlContext, Class) line: 784,     
+java.security.AccessController.doPrivileged(PrivilegedExceptionAction, AccessControlContext) line: 691,     
+sun.security.ssl.SSLEngineImpl$DelegatedTask.run() line: 1192,     
+jdk.internal.net.http.common.SSLFlowDelegate$$Lambda$215.1624064509.accept(Object),     
+java.util.ArrayList.forEach(Consumer) line: 1510,     
+jdk.internal.net.http.common.SSLFlowDelegate.lambda$executeTasks$3(List) line: 1109,     
+jdk.internal.net.http.common.SSLFlowDelegate$$Lambda$214.2081681142.run(),     
+jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(Runnable) line: 155,     
+jdk.internal.net.http.common.SSLFlowDelegate.executeTasks(List) line: 1104,     
+jdk.internal.net.http.common.SSLFlowDelegate.doHandshake(SSLFlowDelegate$EngineResult, int) line: 1070,     
+jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData() line: 474,     
+jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run() line: 264,     
+jdk.internal.net.http.common.SequentialScheduler$SynchronizedRestartableTask.run() line: 175,     
+jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler$DeferredCompleter) line: 147,     
+jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run() line: 198,     
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor$Worker) line: 1130,     
+java.util.concurrent.ThreadPoolExecutor$Worker.run() line: 630,     
+java.lang.Thread.run() line: 832
+
+X509Validation
+--------------
+sun.security.provider.certpath.PKIXCertPathValidator.validate(TrustAnchor, PKIX$ValidatorParams) line: 253,     
+sun.security.provider.certpath.PKIXCertPathValidator.validate(PKIX$ValidatorParams) line: 145,     
+sun.security.provider.certpath.PKIXCertPathValidator.engineValidate(CertPath, CertPathParameters) line: 84,     
+java.security.cert.CertPathValidator.validate(CertPath, CertPathParameters) line: 309,    
+sun.security.validator.PKIXValidator.doValidate(X509Certificate[], PKIXBuilderParameters) line: 345,     
+sun.security.validator.PKIXValidator.engineValidate(X509Certificate[], Collection, List, AlgorithmConstraints, Object) line: 259,     
+sun.security.validator.Validator.validate(X509Certificate[], Collection, List, AlgorithmConstraints, Object) line: 264,     
+sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509Certificate[], String, SSLEngine, boolean) line: 285,     
+sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509Certificate[], String, SSLEngine) line: 144,     
+sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(ClientHandshakeContext, List) line: 1310,     
+sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(ClientHandshakeContext, CertificateMessage$T13CertificateMessage) line: 1207,     sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(ConnectionContext, ByteBuffer) line: 1154,     sun.security.ssl.SSLHandshake.consume(ConnectionContext, ByteBuffer) line: 396,     sun.security.ssl.HandshakeContext.dispatch(byte, ByteBuffer) line: 444,     sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run() line: 1260,     
+sun.security.ssl.SSLEngineImpl$DelegatedTask$DelegatedAction.run() line: 1247,     
+java.security.AccessController.executePrivileged(PrivilegedExceptionAction, AccessControlContext, Class) line: 784,     
+java.security.AccessController.doPrivileged(PrivilegedExceptionAction, AccessControlContext) line: 691,     
+sun.security.ssl.SSLEngineImpl$DelegatedTask.run() line: 1192,     
+jdk.internal.net.http.common.SSLFlowDelegate$$Lambda$215.627181723.accept(Object),     
+java.util.ArrayList.forEach(Consumer) line: 1510,     
+jdk.internal.net.http.common.SSLFlowDelegate.lambda$executeTasks$3(List) line: 1109,     
+jdk.internal.net.http.common.SSLFlowDelegate$$Lambda$214.410888346.run(),     
+jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(Runnable) line: 155,     
+jdk.internal.net.http.common.SSLFlowDelegate.executeTasks(List) line: 1104,     
+jdk.internal.net.http.common.SSLFlowDelegate.doHandshake(SSLFlowDelegate$EngineResult, int) line: 1070,     
+jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData() line: 474,     
+jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run() line: 264,     
+jdk.internal.net.http.common.SequentialScheduler$SynchronizedRestartableTask.run() line: 175,     
+jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler$DeferredCompleter) line: 147,     
+jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run() line: 198,     
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor$Worker) line: 1130,     
+java.util.concurrent.ThreadPoolExecutor$Worker.run() line: 630,     
+java.lang.Thread.run() line: 832
+
+TLSHandshake
+------------
+sun.security.ssl.Finished.recordEvent(SSLSessionImpl) line: 1136,     
+sun.security.ssl.Finished$T13FinishedProducer.onProduceFinished(ClientHandshakeContext, SSLHandshake$HandshakeMessage) line: 753,     
+sun.security.ssl.Finished$T13FinishedProducer.produce(ConnectionContext, SSLHandshake$HandshakeMessage) line: 658,    
+sun.security.ssl.SSLHandshake.produce(ConnectionContext, SSLHandshake$HandshakeMessage) line: 440,     
+sun.security.ssl.Finished$T13FinishedConsumer.onConsumeFinished(ClientHandshakeContext, ByteBuffer) line: 1001,     
+sun.security.ssl.Finished$T13FinishedConsumer.consume(ConnectionContext, ByteBuffer) line: 876,     
+sun.security.ssl.SSLHandshake.consume(ConnectionContext, ByteBuffer) line: 396,     
+sun.security.ssl.HandshakeContext.dispatch(byte, ByteBuffer) line: 444,     
+sun.security.ssl.HandshakeContext.dispatch(byte, Plaintext) line: 419,     
+sun.security.ssl.TransportContext.dispatch(Plaintext) line: 181,    
+sun.security.ssl.SSLTransport.decode(TransportContext, ByteBuffer[], int, int, ByteBuffer[], int, int) line: 167,     
+sun.security.ssl.SSLEngineImpl.decode(ByteBuffer[], int, int, ByteBuffer[], int, int) line: 729,     
+sun.security.ssl.SSLEngineImpl.readRecord(ByteBuffer[], int, int, ByteBuffer[], int, int) line: 684,     
+sun.security.ssl.SSLEngineImpl.unwrap(ByteBuffer[], int, int, ByteBuffer[], int, int) line: 499,     
+sun.security.ssl.SSLEngineImpl.unwrap(ByteBuffer, ByteBuffer[], int, int) line: 475,     
+javax.net.ssl.SSLEngine.unwrap(ByteBuffer, ByteBuffer) line: 634,     
+jdk.internal.net.http.common.SSLFlowDelegate$Reader.unwrapBuffer(ByteBuffer) line: 517,     
+jdk.internal.net.http.common.SSLFlowDelegate$Reader.processData() line: 423,     
+jdk.internal.net.http.common.SSLFlowDelegate$Reader$ReaderDownstreamPusher.run() line: 264,     
+jdk.internal.net.http.common.SequentialScheduler$SynchronizedRestartableTask.run() line: 175,     
+jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler$DeferredCompleter) line: 147,     
+jdk.internal.net.http.common.SequentialScheduler$TryEndDeferredCompleter.complete() line: 315,     
+jdk.internal.net.http.common.SequentialScheduler$CompleteRestartableTask.run(SequentialScheduler$DeferredCompleter) line: 149,     
+jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run() line: 198,     
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor$Worker) line: 1130,    
+java.util.concurrent.ThreadPoolExecutor$Worker.run() line: 630,     
+java.lang.Thread.run() line: 832
+```
