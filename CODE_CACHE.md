@@ -6,7 +6,7 @@
     buffers and bytecode interpreter. This code type will stay in the code cache forever.
     - `(-XX:ProfiledCodeHeapSize)` A profiled code heap containing lightly optimized, profiled methods 
     with a short lifetime.
-    - `(-XX:NonMethodCodeHeapSize)` A non-profiled code heap containing fully optimized, non-profiled 
+    - `(-XX:NonProfiledCodeHeapSize)` A non-profiled code heap containing fully optimized, non-profiled 
     methods with a potentially long lifetime.
 - Code cache sweeper: Now only iterates over the method-code heaps
 
